@@ -16,8 +16,13 @@ Delantero::~Delantero() {
 
 void Delantero::mostrarDatos() {
 
+    cout<<"\nDelantero: "<<endl;
     Jugador::mostrarDatos();
     cout<<"Goles anotados: "<<golesAnotados<<endl;
+
+}
+
+Delantero::Delantero() {
 
 }
 

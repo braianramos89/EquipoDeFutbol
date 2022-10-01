@@ -10,6 +10,7 @@ class Defensa : public Jugador {
     public:
         Defensa(string nombre, string apellido, int edad, bool esTitular);
         ~Defensa();
+        Defensa();
          void mostrarDatos();
 
 

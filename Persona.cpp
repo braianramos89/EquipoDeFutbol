@@ -23,3 +23,7 @@ void Persona::mostrarDatos() {
 
 
 }
+
+Persona::Persona() {
+
+}

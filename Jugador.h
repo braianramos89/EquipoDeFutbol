@@ -16,6 +16,7 @@ class Jugador : public Persona {
 
     Jugador(string nombre, string apellido,int edad, bool esTitular);
     ~Jugador();
+    Jugador();
      void mostrarDatos();
 
 

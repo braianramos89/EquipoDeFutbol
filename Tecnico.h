@@ -18,6 +18,7 @@ protected:
 public:
     Tecnico(string nombre,string apellido, int edad, int aniosExperiencia, bool esNacional);
     ~Tecnico();
+    Tecnico();
      void mostrarDatos();
 
 };

@@ -20,3 +20,7 @@ void Jugador::mostrarDatos() {
    if (esTitular?cout<<"Es Titular"<<endl : cout<<"No es titular"<<endl);
 
 }
+
+Jugador::Jugador() {
+
+}

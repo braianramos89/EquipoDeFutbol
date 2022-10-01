@@ -16,7 +16,13 @@ Mediocampo::~Mediocampo() {
 
  void Mediocampo::mostrarDatos() {
 
+    cout<<"\nMediocampista: "<<endl;
     Jugador::mostrarDatos();
+
     cout<<"Asistencias: "<<asistencias<<endl;
+
+}
+
+Mediocampo::Mediocampo() {
 
 }

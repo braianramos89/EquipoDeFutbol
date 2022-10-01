@@ -14,6 +14,7 @@ private:
 public:
     Persona(string nombre, string apellido, int edad);
     ~Persona();
+    Persona();
     virtual  void mostrarDatos();
 };
 

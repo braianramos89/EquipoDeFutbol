@@ -16,7 +16,12 @@ Portero::~Portero() {
 
 void Portero::mostrarDatos() {
 
+    cout<<"\nPortero: "<<endl;
     Jugador::mostrarDatos();
     cout<<"Goles recibidos: "<<golesRecibidos<<endl;
+
+}
+
+Portero::Portero() {
 
 }

@@ -13,6 +13,7 @@ protected:
 public:
     Delantero(string nombre, string apellido, int edad, bool esTitular, int golesAnotados);
     ~Delantero();
+    Delantero();
      void mostrarDatos();
 
 };

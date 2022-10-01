@@ -14,7 +14,11 @@ Defensa::~Defensa() {
 
 void Defensa::mostrarDatos(){
 
-    cout<<"Defensor"<<endl;
+    cout<<"\nDefensor: "<<endl;
     Jugador::mostrarDatos();
-    cout<<"-------------------------"<<endl;
+
+}
+
+Defensa::Defensa() {
+
 }

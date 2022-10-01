@@ -14,6 +14,7 @@ public:
 
     Portero(string nombre, string apellido, int edad, bool esTitular, int golesRecibidos);
     ~Portero();
+    Portero();
      void mostrarDatos();
 
 };

@@ -15,20 +15,29 @@ using namespace std;
 class EquipoFutbol {
 
 private:
+
+
     string nombreEquipo;
     string pais;
     Tecnico *tecnico;
     Portero *portero;
-    Mediocampo* mediocampo;
-    Delantero* delantero;
-    Defensa* defensa;
+    Mediocampo *mediocampo[4];
+    Delantero *delantero[2];
+    Defensa *defensa[4];
 
 public:
 
     EquipoFutbol(string nombreEquipo, string pais);
-    EquipoFutbol(string nombreEquipo, string pais, Tecnico *pTecnico[0], Portero *pPortero[0],Mediocampo *pMediocampo[3], Delantero *pDelantero[1], Defensa *pDefensa[3]);
+
+
+public:
+    EquipoFutbol(string nombreEquipo, string pais, Tecnico *pTecnico, Portero *pPortero, Mediocampo *pMediocampo[],
+                 Delantero *pDelantero[], Defensa *pDefensa[]);
 
     ~EquipoFutbol();
+
+    EquipoFutbol();
+
     void imprimir();
 
 

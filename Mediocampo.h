@@ -15,6 +15,7 @@ protected:
 public:
     Mediocampo(string nombre, string apellido, int edad, bool esTitular, int asistencias);
     ~Mediocampo();
+    Mediocampo();
     void mostrarDatos();
 };
 

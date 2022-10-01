@@ -12,32 +12,31 @@
 
 
 int main() {
-    Tecnico* tecnico1[0];
-    Portero* portero1[0];
-    Defensa* defensa1[3];
-    Mediocampo* mediocampo1[3];
-    Delantero* delantero1[1];
 
+    Defensa *defensas[4];
+    Mediocampo *mediocampos[4];
+    Delantero *delanteros[2];
 
-    tecnico1[0] = new Tecnico("Carlos","Queiroz", 66, 30, false);
-    tecnico1[0]->mostrarDatos();
-    portero1[0] = new Portero{"Davis","Ospina", 30, true, 10};
-    defensa1[0] = new Defensa{"Yerry ","Mina", 24, true};
-    defensa1[1] = new Defensa{"Davison","Sánchez", 23, true};
-    defensa1[2] = new Defensa{"William","Tesillo", 29, true};
-    defensa1[3] = new Defensa{"Stefan","Medina", 29, true};
-    mediocampo1[0] = new Mediocampo{"Mateus","Uribe", 28, true, 12};
-    mediocampo1[1] = new Mediocampo{"Wilmar","Barrios", 25, true,12};
-    mediocampo1[2] = new Mediocampo{"Juan Guillermo","Cuadrado", 31, true,10};
-    mediocampo1[3] = new Mediocampo{"James","Rodriguez", 28, true,32};
-    delantero1[0] = new Delantero{"Radamel","Falcao", 33, true, 15};
-    delantero1[1] = new Delantero{"Luis","Diaz", 21, true, 12};
-    EquipoFutbol equipo1("Colombiano","Colombia", tecnico1, portero1, mediocampo1, delantero1, defensa1);
-    cout<<"-------------------------"<<endl;
+    Tecnico *tecnico1 = new Tecnico("Carlos", "Queiroz", 66, 30, false);
+    Portero *portero1 = new Portero("Davis", "Ospina", 30, true, 10);
+    defensas[0] = new Defensa{"Yerry ", "Mina", 24, true};
+    defensas[1] = new Defensa{"Davison", "Sánchez", 23, true};
+    defensas[2] = new Defensa{"William", "Tesillo", 29, true};
+    defensas[3] = new Defensa{"Stefan", "Medina", 29, true};
+    mediocampos[0] = new Mediocampo{"Mateus", "Uribe", 28, true, 12};
+    mediocampos[1] = new Mediocampo{"Wilmar", "Barrios", 25, true, 12};
+    mediocampos[2] = new Mediocampo{"Juan Guillermo", "Cuadrado", 31, true, 10};
+    mediocampos[3] = new Mediocampo{"James", "Rodriguez", 28, true, 32};
+    delanteros[0] = new Delantero{"Radamel", "Falcao", 33, true, 15};
+    delanteros[1] = new Delantero{"Luis", "Diaz", 21, true, 12};
+    EquipoFutbol equipo1("Colombiano", "Colombia", tecnico1, portero1, mediocampos, delanteros, defensas);
 
-    tecnico1[0]->mostrarDatos();
+    cout << "-------------------------" << endl;
+
+    equipo1.imprimir();
 
     cout<<"-------------------------"<<endl;
+
 
     return 0;
 }

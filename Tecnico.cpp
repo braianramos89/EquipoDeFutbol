@@ -17,9 +17,14 @@ Tecnico::~Tecnico() {
 
 void Tecnico::mostrarDatos() {
 
+    cout << "\nTecnico: " << endl;
     Persona::mostrarDatos();
     cout<< "Anios de experiencia: " << aniosExperiencia << endl;
     if (esNacional?cout<<"Es nacional"<<endl : cout<<"Es extranjero"<<endl);
+
+}
+
+Tecnico::Tecnico() {
 
 }
 
