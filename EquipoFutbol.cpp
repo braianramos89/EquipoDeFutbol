@@ -51,7 +51,7 @@ void EquipoFutbol::imprimir() {
         delantero[i]->mostrarDatos();
     }
     cout << "Defensa: " << endl;
-    for (int i = 0; i <= 3; ++i) {
+    for (int i = 0; i < 4; ++i) {
         defensa[i]->mostrarDatos();
     }
 }
@@ -61,6 +61,12 @@ EquipoFutbol::EquipoFutbol() {
 }
 
 EquipoFutbol::~EquipoFutbol() {
+
+    delete this->mediocampo[3];
+    delete this->defensa[3];
+    delete this->delantero[1];
+    delete this->portero;
+    delete this->tecnico;
 
 }
 
